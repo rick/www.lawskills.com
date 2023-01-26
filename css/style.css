@@ -1,0 +1,288 @@
+/* page defaults */
+body                     { margin: 0; 
+                           color:#000000; background-color: white; 
+                           font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;}
+body.feedback            { color: #000000; background-color: #dddddd; }
+
+img			 { border:none;}
+a img			 { border:none;}
+
+a:link                   { text-decoration: none; }
+a:visited                { text-decoration: none; } 
+
+.topheader		 { width: 95%; margin-left: 0px; }
+
+table                    { color: #000000; background-color: white; 
+	                   font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;}
+/* some browsers don't understand fonts */
+th, td                   { font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;}
+
+/* this table is used for the middle part, and had three columns */
+td.bigtable              { padding: 10px; width:70%;}
+
+/* this table is used for the middle part, and had three columns */
+td.lefttable              { padding: 10px; width:15%;}
+
+/* this table is used for the middle part, and had three columns */
+td.righttable              { padding: 10px; width:15%;}
+
+/* plain text on the sides */
+table.sidetext           { font-size: 80%; width: 100%; }
+
+/* little tables along the sides */
+table.side               { font-size: 90%; border: 2px solid #000000; 
+	                   color: #000000; background-color: #dddddd; 
+	                   width: 90%; }
+table.side TH            { border-bottom: 1px solid #000000; padding: 2px; margin: 4px; 
+		           color: #000000; background-color: #4bbad8; 
+		           font-weight: bold; text-align: left; }
+table.side TD            { border: none; padding: 2px; margin: 4px; 
+		           color: #000000; background-color: #ddeaff; }
+
+/* tables with headers in the middle */
+table.middle              { border: none; padding: 4px; width: 100%; }
+table.middle TR.evenrow TD { color: #000000; background-color: white; }
+table.middle TR.oddrow TD { color: #000000; background-color: #eeeeee; }
+table.middle TH           { color: #000000; background-color: #4bbad8; 
+		            font-weight: bold; text-align: left; }
+
+/* login & registration forms, unused currently */
+table.loginform           { border: solid black 2px; width: 100%; }
+table.loginform TR TH     { color: #000000; background-color: #ddffff; }
+table.loginform TR TD     { color: #000000; background-color: white; }
+table.loginform TR TD a.forgot { font-size: smaller; }
+table.loginform TR        { vertical-align: top; text-align: left; }
+ 
+table.registerform        { border: solid black 2px; width: 100%; }
+table.registerform TR TH  { color: #000000; background-color: #ddffff; }
+table.registerform TR TD  { color: #000000; background-color: white; }
+table.registerform TR TD a.forgot { font-size: smaller; }
+table.registerform TR     { vertical-align: top; text-align: left; }
+  
+/* for the category display */
+table.categories          { border: 1px solid black; }
+th.categories             { border: 2px solid black;
+			    color: #000000; background-color: #4bbad8; }
+tr.categories             { vertical-align: top; }
+
+.small                    { font-size: smaller; }
+.error                    { color: red; background-color: #ffffff; font-size: smaller; }
+.simpletitle              { font-weight : bold; }
+
+/* content editing preview table */
+table.preview             { font-size: 90%; border: none;
+                            color: #000001; background-color: #000000; 
+			    width: 100%; }
+table.preview th          { border: none; padding: 2px; margin: 4px; 
+                            color: #000000; background-color: #4bbad8; 
+			    font-weight: bold; text-align: left; }
+table.preview td          { border: none; padding: 2px; margin: 4px; 
+                            color: #000000; background-color: #ddeaff; }
+
+/* content input/edit area and widgets */
+.contentinput             { color: #000000; background-color: #4bbad8; 
+			    border: 1px solid black;
+			    padding : 4px; }
+.inputelement             { margin-bottom : 1ex; }
+
+/* full stories */
+table.storynews           { }
+table.storystats          { }
+table.storygeneral        { }
+table.storyevent          { }
+
+/* administration links */
+a.editlink	          { }
+a.deletelink              { }
+
+.categories             { border: 2px solid black; font-weight: bold; padding: 1ex;
+			    color: #000000; background-color: #4bbad8;
+			    margin-top: 1em; margin-bottom: 1em;}
+
+
+/* search navigation */
+table.searchnav           { text-align : center ; }
+tr.listsearch             { color: #000000; background-color: #dddddd ; }
+
+/* code display */
+.listname		  { font-weight: bold; 
+			    width: 3em;
+			    color: black; 
+			    background-color: #ddeaff;
+			    border-left: 2px solid black;
+			    border-bottom: 1px solid black;
+			    padding: 1ex; 
+			    margin: 2em; }
+.listbody		  { font-weight: bold; 
+			    width: 200px;
+			    color: black; 
+			    background-color: #bfffcf;
+			    border-left: 1px dashed black;
+			    border-right: 2px solid black;
+			    border-bottom: 1px solid black;
+			    padding: 1ex; 
+			    margin: 2em; }
+.titlelinks		  { padding-left: 1ex; }
+.chapterlinks		  { padding-left: 1ex; }
+.sectionlinks		  { padding-left: 1ex; }
+.titleselected		  { padding-left: 1ex; 
+			    font-weight: bold;
+			    color:red; 
+			    background-color:#bfffcf; 
+			    }
+.chapterselected	  { padding-left: 1ex; 
+			    font-weight: bold;
+			    color:red; background-color:#bfffcf; }
+.sectionselected	  { padding-left: 1ex; 
+			    font-weight: bold;
+			    color:red; background-color:#bfffcf; }
+.secnavselected		  { font-weight: bold;
+			    color:red; background-color:#bfffcf; }
+.sectiondescription       { display:block;
+			    font-style: italic;
+			    }
+.codebody		  { margin: 2em; padding: 1em;
+			    border-bottom: 2px solid black;
+			  }
+.sectitle		  { text-indent: 0;
+			    font-weight: bold;
+			  }
+.code			  { text-indent: 1em; }
+.outlinks		  { font-weight: bold; 
+			    border: 1px dashed blue;
+			    margin: 1em;
+			    padding: 1ex;
+			    color: black; background-color: #cceecc;
+			    }
+.inlinks		  { font-weight: bold;
+			    padding: 1ex;
+			    border: 1px dashed blue;
+			    color: black; background-color: #ccccee;
+			    margin: 1em;
+			    }
+.extlink		  { display: inline; padding-left: 1em;
+			    }
+.term			  { background-color: #e3f6f9; color: black; 
+			    font-weight: normal; 
+			    text-decoration: none;}
+.sectiontermcites	  { font-weight: bold;
+			    padding: 1ex;
+			    border: 1px dashed blue;
+			    color: black; background-color: #e3f6f9;
+			    margin: 1em;
+			    }
+.sectionterm              { padding-left: 1em; }
+.searchmatch1		  { font-weight: bold; font-style: normal; color:black; background-color: #ff9999;}
+.searchmatch2		  { font-weight: bold; font-style: normal; color:black; background-color: #13f471;}
+.searchmatch3		  { font-weight: bold; font-style: normal; color:black; background-color: #93c9ff;}
+.searchmatch4		  { font-weight: bold; font-style: normal; color:black; background-color: #f4b113;}
+.searchmatch5		  { font-weight: bold; font-style: normal; color:black; background-color: #d3aaef;}
+.searchmatch6		  { font-weight: bold; font-style: normal; color:black; background-color: #59f9ef;}
+.searchmatch7		  { font-weight: bold; font-style: normal; color:black; background-color: #d81ed8;}
+.searchmatch8		  { font-weight: bold; font-style: normal; color:black; background-color: #ff9999;}
+.searchmatch9		  { font-weight: bold; font-style: normal; color:black; background-color: #13f471;}
+.freesearchmatch	  { font-weight: bold; font-style: normal; color:black; background-color: white;}
+
+.searchtext		  { font-style: italic; font-weight: normal; text-indent: 1em; margin: 1ex;}
+.searchphrase		  { font-style: normal; font-weight: bold; text-indent: 1em; }
+.searchhit		  { margin: 1em; font-weight: bold;}
+.searchcodeheader	  { font-weight: bold;  margin-top: 1em;}
+.searchtermheader	  { font-weight: bold; }
+
+.termsearch		  { font-weight: bold;
+			    padding: 1ex;
+			    border: 1px dashed blue;
+			    color: black; background-color: #f9e284;
+			    margin: 1em;
+			    }
+.topsearch		    { padding: 1ex; vertical-align: middle;}
+.topstext		    { }
+.topsimg		    { vertical-align: -110%;}
+.searchref		  { font-weight: bold;
+			    padding: 1ex;
+			    border: 1px dashed blue;
+			    color: black; background-color: #99ff93;
+			    margin: 1em;
+			    }
+.citelinks                { margin-top:0; }
+.citelink		  {  margin-bottom: 0.5ex; font-size: smaller; text-decoration: underline; }
+.citename		  {  margin-left:1em;}
+.searchcites		  { margin-top: 1em; }
+.searchnav		  { width: 80%;
+			    background-color: white; 
+			    color: red;
+			    margin-left: 10%;
+			    margin-top: 1em;
+			    padding-top: 1ex;
+			    padding-bottom: 1ex;
+			    border-top: 2px black solid; 
+			    border-bottom: 2px black solid; 
+			    text-align:center; font-weight: bold;}
+.searchshort		  { border: 2px solid black; background-color: #ddeaff; color: black; padding: 1ex; margin-bottom: 1em; }
+.searchnavlinks		  { margin-left: 1em; }
+.searchfailed		  { text-indent: 1em; font-weight: bold;}
+.definitions		  { margin: 1em; font-weight: bold;}
+
+.shoptext		  { font-weight: bold; color:black; background-color: #ffffff;
+			    text-align:center; }
+.shoprule		  { width: 10%; height: 2px; border:dotted black 1px}
+.shopimage		  { border-bottom: 1px solid black; margin-bottom: 1ex; 
+			    padding: 0;
+			    display:block;}                         
+
+.screenshot		  { padding-left: 2em; padding-top: 1em; }
+.promotext		  { margin-top: 1em; margin-left: 1em; margin-right: 2em; 
+			    text-indent: 1ex; font-weight: bold; }
+.pricetext		  { margin-top: 1em; margin-left: 1em; margin-right: 2em; 
+			    text-indent: 1ex; font-weight: bold; 
+			    color: red; }
+.tourlink		  { border-top: dashed black 1px;  margin: 1em;
+			    padding: 1ex; font-weight: bold; }
+.contracttitle		  { font-weight: bold; text-align:center; font-size: larger;
+			    margin-bottom: 1em;}
+.contractheading	  { font-weight: bold;}
+.contracttext		  { font-weight: normal; text-indent: 1em; margin-bottom: 1ex;}
+.contactlist		  { text-indent: 0; }
+.mailname		  { font-weight: bold;  margin-left:1em; text-indent:0;}
+.mailtext		  { font-weight: normal; text-indent: 1em; margin: 1ex; }
+.frontpage		  { text-indent: 1em; margin: 1em; }
+.frontpage em		  { color: red; background-color: white; }
+.address		  { margin-left: 6em; }
+.attention		  { color: red; font-weight: normal; font-style: italic;}
+.tourmenu		  { margin-top: 1em; 
+			    margin-left: 4em; 
+			    margin-right: 4em; 
+			    margin-bottom: 1em; 
+			    padding-left: 4ex; 
+			    padding-top: 1ex; 
+			    padding-bottom: 1ex; 
+			    font-weight: bold;  
+			    border: 1px dashed #cccccc; }
+.tourcurrent		  { background-color: #ffffff; color: #dd0000;}
+.tourlinks		  { margin-left: 3ex;}
+.lsconflogo		  { text-align: center; border: none; padding: 0px; margin: 0px;}
+.lscopy			  { text-align: center; font-size: smaller; font-weight: bold; }
+
+
+.caseheader		  { border: 2px solid black; margin-bottom: 1em;
+padding: 1em;  color: black; background-color: #4bbad8; font-weight: bold; }
+.casenotes		  { margin-top: 1em; margin-left: 3em; margin-right: 1ex; border-top:
+1px solid black; padding-top: 1ex; width: 70%; margin-bottom: 2em; }
+.caseparties                 { font-size: larger; font-weight: bold; text-align: center;}
+.casecite                 { font-size: medium; font-style: italic;  text-align:
+center; color: black; background-color: #acefde; text-decoration: underline;  }
+.casenum		  { font-weight: bold;  text-align: center;}
+.casepar		  { text-indent: 2em; margin-bottom: 1ex;}
+.casechrono		  { font-weight: bold;  text-align: center;}
+.casedate		  { text-align: center;}
+.casepresiding		  { font-weight: bold; }
+.casecounsel		  { font-style: italic; margin-bottom: 1ex;  }
+.caselawyer		  { }
+.casenotenum		  { vertical-align: super; text-decoration: underline; font-size: smaller; }
+.caseinlinks		  { font-weight: normal; margin-top: 1em;  background-color: #acefde; color: black; margin-left: 0px; 
+			    border: 1px dashed blue; padding-bottom: 2ex; padding-top: 1ex; padding-left: 1ex; padding-right: 1ex; }
+.caseciteline		  { margin-bottom: 1ex; margin-left: 2ex; }
+.casemissing		  { color: black; background-color: #dddddd; }
+.fullcase		  { text-align: center; color: red; font-weight: bold; font-style: italic; font-size: larger; padding: 1ex; border: 1px solid blue; background-color: #ddeaff;}
+.header			  { font-size: larger; font-weight: bold; margin-top: 1ex; margin-bottom: 1ex; }
+.didyouknow		  { font-size: smaller; font-weight: bold; color: black; background-color: #aaffaa; }
